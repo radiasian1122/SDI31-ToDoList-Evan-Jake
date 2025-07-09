@@ -1,0 +1,62 @@
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+    
+    
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: 5px;
+    border-style: inset;
+    border-color: pink;
+}
+
+.form{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    flex-direction: row;
+    border: 5px;
+    border-style: inset;
+    border-color: yellow;
+}
+
+.completed{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    flex-direction: row;
+    border: 5px;
+    border-style: inset;
+    border-color: green;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+h4{
+    text-decoration: none;
+}
+
