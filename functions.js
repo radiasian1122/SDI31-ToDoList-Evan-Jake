@@ -1,8 +1,9 @@
 /*TODO
-reset input form
-configure remove completed button
-move completed items to completed items list
+run through list of to-dos
+store each in local storage
 
+on load: grab all from local storage
+run through addTask function to add to page
 
 */
 
@@ -29,7 +30,7 @@ removeBtn.addEventListener("click", ()=>{
 
 function addTask(newString){
   let listItem = document.createElement('li');
-  console.log(newString);
+  //console.log(newString);
   
   listItem.innerHTML = "<label class='strikethrough'><input type='checkbox'/>"+newString+"</label>";
   
@@ -72,3 +73,9 @@ function removeTask() {
     }
 
 }
+
+// function saveTasks(){
+//   //loop through all open tasks
+//   //save to localstorage
+
+// }
